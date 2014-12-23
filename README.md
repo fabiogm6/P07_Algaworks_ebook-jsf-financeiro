@@ -24,7 +24,9 @@ para funcionar:
 1) ir no persistente.xml e mudar o acesso para o MySQL (user e pw);
 
 2) criar 2 tabelas no MySQL
+
     a) lancamento
+    
     CREATE TABLE `lancamento` (
       `id` bigint(20) NOT NULL AUTO_INCREMENT,
       `pessoa_id` bigint(20) NOT NULL,
@@ -34,9 +36,10 @@ para funcionar:
       `data_pagamento` date DEFAULT NULL,
       `data_vencimento` date DEFAULT NULL,
       PRIMARY KEY (`id`)
-      
-      
+
+
     b) pessoa
+    
     CREATE TABLE `pessoa` (
       `id` bigint(20) NOT NULL AUTO_INCREMENT,
       `nome` varchar(60) NOT NULL,
